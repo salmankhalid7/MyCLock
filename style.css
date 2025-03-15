@@ -1,17 +1,26 @@
-body{
-    background: url('/backiee-302167.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+body {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
     margin: 0;
+    position: relative;
+    overflow: hidden;
 }
-#clock{
+
+#bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Send image to background */
+}
+
+#clock {
     font-size: 35px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: aliceblue;
     padding: 30px;
+    position: relative;
 }
